@@ -6,8 +6,12 @@
     justify-content: space-around;
     align-items: center;
     margin:  20px auto 0;
-    background-color: #181717;
+    background-color: #ffffff;
 }
+
+/*
+#181717
+*/
 
 .name {
     font-size: 25px;
