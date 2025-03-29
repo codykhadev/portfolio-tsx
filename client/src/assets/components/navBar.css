@@ -1,0 +1,51 @@
+.navbar {
+    width: 750px;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:  20px auto 0;
+    background-color: #181717;
+}
+
+.name {
+    font-size: 25px;
+    align-self: center;
+}
+
+.name:hover {
+    color: #ffffff;
+    transform: translateY(-1.5px);
+    transition: all .25s ease-in-out;
+}
+
+ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    font-size: 30px;
+}
+
+ul li a {
+    display: flex;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color: #ffffff;
+    transform: translateY(-1.5px);
+    transition: all .25s ease-in-out;
+}
+
+.shrink {
+    transform: scale(.8);
+    transition: transform 0.15s ease-in-out;
+}
