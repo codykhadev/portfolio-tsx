@@ -12,12 +12,15 @@
 .name {
     font-size: 25px;
     align-self: center;
+    transition: transform 0.15s ease-in-out;
+    --scale: 1;
+    --translate: 0;
+    transform: scale(var(--scale)) translateY(var(--translate));
 }
 
 .name:hover {
     color: #ffffff;
-    transform: translateY(-1.5px);
-    transition: all .25s ease-in-out;
+    --translate: -2px;
 }
 
 ul {
@@ -37,15 +40,17 @@ ul li {
 ul li a {
     display: flex;
     cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+    --scale: 1;
+    --translate: 0;
+    transform: scale(var(--scale)) translateY(var(--translate));
 }
 
 ul li a:hover {
     color: #ffffff;
-    transform: translateY(-1.5px);
-    transition: all .25s ease-in-out;
+    --translate: -2px;
 }
 
 .shrink {
-    transform: scale(.8);
-    transition: transform 0.15s ease-in-out;
+    transform: scale(0.9);
 }
