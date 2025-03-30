@@ -1,56 +1,68 @@
 .navbar {
-    width: 750px;
-    border: 2px solid rgb(235, 235, 235);
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:  20px auto 0;
-    background-color: #181717;
+  position: fixed;
+  width: 750px;
+  border: 2px solid rgb(235, 235, 235);
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto 0;
+  background-color: rgba(24, 23, 23, 0.75);
+  opacity: 50;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.25s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.navbar.hidden {
+  transform: translate(-50%, -120px);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .name {
-    font-size: 25px;
-    align-self: center;
-    transition: transform 0.15s ease-in-out;
-    --scale: 1;
-    --translate: 0;
-    transform: scale(var(--scale)) translateY(var(--translate));
+  font-size: 25px;
+  align-self: center;
+  transition: transform 0.15s ease-in-out;
+  --scale: 1;
+  --translate: 0;
+  transform: scale(var(--scale)) translateY(var(--translate));
 }
 
 .name:hover {
-    color: #ffffff;
-    --translate: -2px;
+  color: #b6b6b6;
+  --translate: -2px;
 }
 
 ul {
-    display: flex;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 15px;
-    font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  font-size: 30px;
 }
 
 ul li a {
-    display: flex;
-    cursor: pointer;
-    transition: transform 0.15s ease-in-out;
-    --scale: 1;
-    --translate: 0;
-    transform: scale(var(--scale)) translateY(var(--translate));
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+  --scale: 1;
+  --translate: 0;
+  transform: scale(var(--scale)) translateY(var(--translate));
 }
 
 ul li a:hover {
-    color: #ffffff;
-    --translate: -2px;
+  color: #b6b6b6;
+  --translate: -2px;
 }
 
 .shrink {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
